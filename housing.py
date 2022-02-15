@@ -1,53 +1,57 @@
 self.swally_score = 0 #initializing swally points variable
 
-Housing = models.IntegerField(max_length = 15, null = True) # need help
-
 #if statments to keep count of a user's swally points
 def swally_score_calculate(self, flag):
     if flag == 0:
         self.swally_score +=100
-        self .save()
+        self.save()
     else:
         self.swally_score -=100
         self.save()
 
 #if statments for the housing progression
 if (self.swally_score < 200):
-    Display House_1 #NEED HELP
+    housing.post('https://httpbin.org/post', data = {'1'})
  
 if (self.swally_score >= 200) & (self.swally_score < 600):
-    Display House_2 #NEED HELP
+    housing.put('https://httpbin.org/put', data = {'2'})
     
 if (self.swally_score >= 600) & (self.swally_score < 1400):
-    Display House_3 #NEED HELP
+    housing.put('https://httpbin.org/put', data = {'3'})
     
 if (self.swally_score  >= 1400) & (self.swally_score < 2600):
-    Display House_4 #NEED HELP
+    housing.put('https://httpbin.org/put', data = {'4'})
     
 if (self.swally_score >= 2600) & (self.swally_score < 4300):
-    Display House_5 #NEED HELP
+    housing.put('https://httpbin.org/put', data = {'5'})
     
 if (self.swally_score  >= 4300) & (self.swally_score < 6500):
-    Display House_6 #NEED HELP
+    housing.put('https://httpbin.org/put', data = {'6'})
     
 if (self.swally_score >= 6500) & (self.swally_score < 9300):
-    Display House_7 #NEED HELP
+    housing.put('https://httpbin.org/put', data = {'7'})
     
 if (self.swally_score >= 9300) & (self.swally_score < 12700):
-    Display House_8 #NEED HELP
+    housing.put('https://httpbin.org/put', data = {'8'})
     
 if (self.swally_score >= 12700) & (self.swally_score < 16700)
-    Display House_9 #NEED HELP
+    housing.put('https://httpbin.org/put', data = {'9'})
     
 if (self.swally_score >= 16700) & (self.swally_score < 21400)
-    Display House_10 #NEED HELP
+    housing.put('https://httpbin.org/put', data = {'10'}
     
 if (self.swally_score >= 21400) & (self.swally_score < 26800):
-    Display House_11 #NEED HELP
+    housing.put('https://httpbin.org/put', data = {'11'})
     
 if (self.swally_score >= 26800) & (self.swally_score < 32900)
-    Display House_12 #NEED HELP
+    housing.put('https://httpbin.org/put', data = {'12'})
     
-if (self.swally_score >= 32900) & (self.swally_score < 39800):
-    Display House_13 #NEED HELP
+if (self.swally_score >= 32900) & (self.swally_score < 3800):
+    housing.put('https://httpbin.org/put', data = {'13'})
+ 
+if (SP >= 39800) & (SP < 47500):
+    housing.put('https://httpbin.org/put', data = {'14'})
+    
+if (SP >= 47500):  
+    housing.put('https://httpbin.org/put', data = {'15'}
  
